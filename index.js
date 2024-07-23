@@ -37,7 +37,7 @@ function bs() {
   if(successfulSwaps.length<2) return;
 
   let avg = Math.floor(averageTimeBetweenFirstAndLast(successfulSwaps));
-  if(data.pb[successfulSwaps.length]>avg) {
+  if(data.pb[successfulSwaps.length]>=avg) {
     ChatLib.chat(`&f${successfulSwaps.length}: &a${avg} &f(&c${data.pb[successfulSwaps.length]}&f)`);
     data.pb[successfulSwaps.length] = avg;
     data.save();
