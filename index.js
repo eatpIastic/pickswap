@@ -91,26 +91,6 @@ function bs() {
   }
 }
 
-// register("packetSent", (packet, event) => {
-  // if(packet.func_180762_c()!="START_DESTROY_BLOCK") return;
-  // let pos = packet?.func_179715_a();
-  // if(!pos) return;
-  // let block = World.getBlockAt(pos.func_177958_n(), pos.func_177956_o(), pos.func_177952_p());
-  // ChatLib.chat(block.getMetadata()?.type);
-  
-  // if(sinceLastShit>=1) return;
-  // sinceLastShit++;
-
-  // let packetItem = Player.getInventory()?.getItems()[slot]?.getRegistryName();
-  // let holdingPickaxe = Player.getHeldItem()?.getRegistryName()?.includes("pickaxe");
-
-  // if(!packetItem?.includes("pickaxe") && packetItem!="minecraft:bow" && holdingPickaxe) {
-    // if(data.ding) World.playSound("random.orb", 1, 1);
-    // successfulSwaps.push(Date.now());
-    // bs();
-  // }
-// }).setFilteredClass(net.minecraft.network.play.client.C07PacketPlayerDigging)
-
 let row = 0;
 register("blockBreak", () => {
   if(sinceLastShit>=1) return;
