@@ -1,7 +1,7 @@
 /// <reference types="../CTAutocomplete" />
 
 import PogObject from "../PogData";
-import Dungeon from "../BloomCore/Dungeons/Dungeon";
+import Dungeon from "../BloomCore/dungeons/Dungeon";
 
 const data = new PogObject("pickswap", {
   "ding": true,
