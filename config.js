@@ -17,7 +17,7 @@ export const show = () => {return data.show};
 const gui = new Gui();
 
 register("command", (...args) => {
-  if(!args[0]) args[0] = ""
+  if(!args) args = [""]
   switch(args[0].toLowerCase()) {
     case "reset":
       for(let i=0; i<data.pb.length; i++) {
@@ -70,7 +70,7 @@ register("command", (...args) => {
       data.save();
       break;
     default:
-      ChatLib.chat("pickswap cmds: reset, spam, streak, ding, show, move, getr, setr x, y");
+      ChatLib.chat("pickswap cmds: reset, spam, streak, ding, show, move, getr, setr");
       break;
   }
 }).setName("pickswap");
