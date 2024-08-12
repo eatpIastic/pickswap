@@ -1,7 +1,7 @@
 {
   "name": "pickswap",
   "creator": "eatplastic",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "entry": "index.js",
-  "requires": ["PogData"]
+  "requires": ["PogData", "BloomCore"]
 }
